@@ -4,6 +4,8 @@ import java.io.DataInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.net.Socket;
+import java.time.Duration;
+import java.time.Instant;
 import java.time.LocalTime;
 
 public class CommunicationThread extends Thread{
@@ -19,6 +21,7 @@ public class CommunicationThread extends Thread{
     }
 
     public void run(){
+        Instant start = Instant.now();
         DataInputStream in = null;
         ObjectInputStream compin = null;
 
@@ -40,7 +43,7 @@ public class CommunicationThread extends Thread{
         System.out.println("\u001B[32mClient info: \n" + clientComputer.toString() + "\u001B[0m");
         String line = "";
         try{
-            while(!line.equals("OVER")){
+            while(true){
                 line = in.readUTF();
                 System.out.println("\u001B[36m" + line + "\u001B[0m");
             }
@@ -50,7 +53,9 @@ public class CommunicationThread extends Thread{
         }
         finally{
             try{
-                System.out.println("\u001B[43mClosing client socket...\u001B[0m");
+                Instant end = Instant.now();
+                Duration elapsed = Duration.between(start, end);
+                System.out.println("\u001B[43mClosing client socket... Connection duration: " + elapsed.toSeconds() + " s\u001B[0m");
                 in.close();
                 socket.close();
             } catch (IOException e) {
