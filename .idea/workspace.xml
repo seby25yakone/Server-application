@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="900088af-ecfe-4962-8704-01770ecfda47" name="Changes" comment="initial commit">
+    <list default="true" id="900088af-ecfe-4962-8704-01770ecfda47" name="Changes" comment="added date time and colored text">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/CommunicationThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/CommunicationThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/ComputerServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/ComputerServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714655564396</updated>
       <workItem from="1714655565614" duration="1674000" />
-      <workItem from="1715081609580" duration="1150000" />
+      <workItem from="1715081609580" duration="3689000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -76,7 +76,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714656810057</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added date time and colored text">
+      <option name="closed" value="true" />
+      <created>1715082777583</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715082777583</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +92,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="added date time and colored text" />
+    <option name="LAST_COMMIT_MESSAGE" value="added date time and colored text" />
   </component>
 </project>

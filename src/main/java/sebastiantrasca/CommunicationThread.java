@@ -14,6 +14,10 @@ public class CommunicationThread extends Thread{
         this.socket = clientSocket;
     }
 
+    public Computer getClientComputer(){
+        return clientComputer;
+    }
+
     public void run(){
         DataInputStream in = null;
         ObjectInputStream compin = null;
@@ -27,6 +31,7 @@ public class CommunicationThread extends Thread{
         try{
             clientComputer = (Computer)compin.readObject();
             this.setName(clientComputer.getUsername());
+            ComputerServer.computerList.add(clientComputer);
         } catch(ClassNotFoundException e) {
             System.out.println("Error getting computer data!");
         } catch (IOException i){
