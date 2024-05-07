@@ -4,6 +4,7 @@ import java.io.DataInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.net.Socket;
+import java.time.LocalTime;
 
 public class CommunicationThread extends Thread{
     protected Socket socket;
@@ -31,24 +32,24 @@ public class CommunicationThread extends Thread{
         } catch (IOException i){
             i.printStackTrace();
         }
-        System.out.println("Client info: \n" + clientComputer.toString());
+        System.out.println("\u001B[32mClient info: \n" + clientComputer.toString() + "\u001B[0m");
         String line = "";
         try{
             while(!line.equals("OVER")){
                 line = in.readUTF();
-                System.out.println(line);
+                System.out.println("\u001B[36m" + line + "\u001B[0m");
             }
         } catch (IOException e){
             line=this.getName();
-            System.out.println("Client "+line+" closed the connection.");
+            System.out.println("\u001B[43mClient "+line+" closed the connection at " + LocalTime.now() + "\u001B[0m");
         }
         finally{
             try{
-                System.out.println("Closing connection...");
+                System.out.println("\u001B[43mClosing client socket...\u001B[0m");
                 in.close();
                 socket.close();
             } catch (IOException e) {
-                System.out.println("Error closing server!");
+                System.out.println("Error closing socket!");
             }
         }
     }
