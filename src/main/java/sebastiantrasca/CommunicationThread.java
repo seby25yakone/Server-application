@@ -1,5 +1,7 @@
 package sebastiantrasca;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.DataInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -23,20 +25,21 @@ public class CommunicationThread extends Thread{
     public void run(){
         Instant start = Instant.now();
         DataInputStream in = null;
-        ObjectInputStream compin = null;
+        ObjectMapper mapper = new ObjectMapper();
 
         try {
             in = new DataInputStream(socket.getInputStream());
-            compin = new ObjectInputStream(socket.getInputStream());
         } catch (IOException e) {
             return;
         }
         try{
-            clientComputer = (Computer)compin.readObject();
+            int length = in.readInt();
+            byte[] jsonData = new byte[length];
+            in.readFully(jsonData);
+            String jsonString = new String(jsonData);
+            clientComputer = mapper.readValue(jsonString, Computer.class);
             this.setName(clientComputer.getUsername());
             ComputerServer.computerList.add(clientComputer);
-        } catch(ClassNotFoundException e) {
-            System.out.println("Error getting computer data!");
         } catch (IOException i){
             i.printStackTrace();
         }
