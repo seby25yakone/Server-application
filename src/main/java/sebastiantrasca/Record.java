@@ -7,15 +7,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Record<T> {
     private long id;
     private Type deviceType;
-    private T device;
+    private String deviceInfo;
     @JsonCreator
-    public Record(@JsonProperty("id") long id, @JsonProperty("deviceType") Type deviceType, T item) {
-        if (!deviceType.getClazz().isInstance(device)) {
-            throw new IllegalArgumentException("Type does not match the item class.");
-        }
+    public Record(@JsonProperty("id") long id, @JsonProperty("deviceType") Type deviceType, @JsonProperty("deviceInfo") String deviceInfo) {
         this.id = id;
         this.deviceType = deviceType;
-        this.device = device;
+        this.deviceInfo = deviceInfo;
     }
 
     public long getId() {
@@ -26,12 +23,12 @@ public class Record<T> {
         return idString;
     }
 
-    public Type getType() {
+    public Type getDeviceType() {
         return deviceType;
     }
 
-    public T getDevice() {
-        return device;
+    public String getDeviceInfo() {
+        return deviceInfo;
     }
 
     public void setId(long id) {
@@ -42,8 +39,8 @@ public class Record<T> {
     public String toString() {
         return "Record{" +
                 "id=" + id +
-                ", type=" + deviceType +
-                ", device=" + device +
+                ", device type=" + deviceType +
+                ", device info=" + deviceInfo +
                 '}';
     }
 }

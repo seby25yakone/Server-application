@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.DataInputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.net.Socket;
 import java.time.Duration;
 import java.time.Instant;
@@ -12,13 +11,13 @@ import java.time.LocalTime;
 
 public class CommunicationThread extends Thread{
     protected Socket socket;
-    private Record<?> clientDevice;
+    private Record clientDevice;
 
     public CommunicationThread(Socket clientSocket){
         this.socket = clientSocket;
     }
 
-    public Record<?> getClientDevice(){
+    public Record getClientDevice(){
         return clientDevice;
     }
 

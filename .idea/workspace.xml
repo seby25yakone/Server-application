@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="900088af-ecfe-4962-8704-01770ecfda47" name="Changes" comment="modified Computer class, added Printer, Router, Record and Type classes">
+    <list default="true" id="900088af-ecfe-4962-8704-01770ecfda47" name="Changes" comment="modified code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/CommunicationThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/CommunicationThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Computer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/ComputerServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/ComputerServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Printer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Record.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Router.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Type.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +83,7 @@
       <workItem from="1715081609580" duration="5055000" />
       <workItem from="1715263727543" duration="1870000" />
       <workItem from="1715788704026" duration="2144000" />
-      <workItem from="1715951746133" duration="858000" />
+      <workItem from="1715951746133" duration="3345000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -129,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715951968444</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="modified code">
+      <option name="closed" value="true" />
+      <created>1715952618204</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715952618204</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +154,7 @@
     <MESSAGE value="added connection duration trackers" />
     <MESSAGE value="implemented json deserialization" />
     <MESSAGE value="modified Computer class, added Printer, Router, Record and Type classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified Computer class, added Printer, Router, Record and Type classes" />
+    <MESSAGE value="modified code" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified code" />
   </component>
 </project>

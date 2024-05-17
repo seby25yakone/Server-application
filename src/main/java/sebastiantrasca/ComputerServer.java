@@ -1,8 +1,6 @@
 package sebastiantrasca;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -11,7 +9,7 @@ import java.util.Scanner;
 
 public class ComputerServer {
     static final int PORT = 8080;
-    static List<Record<?>> deviceList = new ArrayList<>();
+    static List<Record> deviceList = new ArrayList<>();
     public static void main(String[] args){
         ServerSocket serverSocket = null;
         Socket clientSocket = null;

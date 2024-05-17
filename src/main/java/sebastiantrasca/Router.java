@@ -26,4 +26,55 @@ public class Router {
         this.wifiStandard = wifiStandard;
         this.security = security;
     }
+
+    public int getLanPorts() {
+        return lanPorts;
+    }
+
+    public int getWanPorts() {
+        return wanPorts;
+    }
+
+    public int getEthernetRate() {
+        return ethernetRate;
+    }
+
+    public int getWifiRate() {
+        return wifiRate;
+    }
+
+    public String getAntennaeType() {
+        return antennaeType;
+    }
+
+    public int getFrequency() {
+        return frequency;
+    }
+
+    public boolean isUsbPort() {
+        return usbPort;
+    }
+
+    public String getWifiStandard() {
+        return wifiStandard;
+    }
+
+    public String getSecurity() {
+        return security;
+    }
+
+    @Override
+    public String toString() {
+        return "Router{" +
+                "lanPorts=" + lanPorts +
+                ", wanPorts=" + wanPorts +
+                ", ethernetRate=" + ethernetRate +
+                ", wifiRate=" + wifiRate +
+                ", antennaeType='" + antennaeType + '\'' +
+                ", frequency=" + frequency +
+                ", usbPort=" + usbPort +
+                ", wifiStandard='" + wifiStandard + '\'' +
+                ", security='" + security + '\'' +
+                '}';
+    }
 }

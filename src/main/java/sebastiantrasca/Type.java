@@ -1,5 +1,8 @@
 package sebastiantrasca;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+@JsonFormat(shape = JsonFormat.Shape.OBJECT)
 public enum Type {
     COMPUTER(Computer.class),
     PRINTER(Printer.class),
