@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class ComputerServer {
     static final int PORT = 8080;
-    static List<Computer> computerList = new ArrayList<>();
+    static List<Record<?>> deviceList = new ArrayList<>();
     public static void main(String[] args){
         ServerSocket serverSocket = null;
         Socket clientSocket = null;
@@ -35,9 +35,9 @@ public class ComputerServer {
                 public void run() {
                     while(true){
                         int i = read.nextInt();
-                        if(computerList.size()>=i+1){
+                        if(deviceList.size()>=i+1){
                             System.out.println("\u001B[32mClient info: ");
-                            System.out.println(computerList.get(i) + "\u001B[0m");
+                            System.out.println(deviceList.get(i) + "\u001B[0m");
                         }
                         else System.out.println("Client index not found");
 

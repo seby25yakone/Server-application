@@ -21,6 +21,10 @@ public class Record<T> {
     public long getId() {
         return id;
     }
+    public String getIdAsString(){
+        String idString = new String(id+"");
+        return idString;
+    }
 
     public Type getType() {
         return deviceType;

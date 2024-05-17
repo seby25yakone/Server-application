@@ -12,14 +12,14 @@ import java.time.LocalTime;
 
 public class CommunicationThread extends Thread{
     protected Socket socket;
-    private Computer clientComputer;
+    private Record<?> clientDevice;
 
     public CommunicationThread(Socket clientSocket){
         this.socket = clientSocket;
     }
 
-    public Computer getClientComputer(){
-        return clientComputer;
+    public Record<?> getClientDevice(){
+        return clientDevice;
     }
 
     public void run(){
@@ -37,13 +37,13 @@ public class CommunicationThread extends Thread{
             byte[] jsonData = new byte[length];
             in.readFully(jsonData);
             String jsonString = new String(jsonData);
-            clientComputer = mapper.readValue(jsonString, Computer.class);
-            this.setName(clientComputer.getUsername());
-            ComputerServer.computerList.add(clientComputer);
+            clientDevice = mapper.readValue(jsonString, Record.class);
+            this.setName(clientDevice.getIdAsString());
+            ComputerServer.deviceList.add(clientDevice);
         } catch (IOException i){
             i.printStackTrace();
         }
-        System.out.println("\u001B[32mClient info: \n" + clientComputer.toString() + "\u001B[0m");
+        System.out.println("\u001B[32mClient info: \n" + clientDevice.toString() + "\u001B[0m");
         String line = "";
         try{
             while(true){
