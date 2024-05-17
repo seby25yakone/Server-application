@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="900088af-ecfe-4962-8704-01770ecfda47" name="Changes" comment="added connection duration trackers">
+    <list default="true" id="900088af-ecfe-4962-8704-01770ecfda47" name="Changes" comment="implemented json deserialization">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Record.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Router.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Type.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/CommunicationThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/CommunicationThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Computer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -39,23 +42,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ComputerServer.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "json",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/java/ClientServer3 - Threads/ComputerServer",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ComputerServer.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;json&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/java/ClientServer3 - Threads/ComputerServer&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -73,7 +79,9 @@
       <updated>1714655564396</updated>
       <workItem from="1714655565614" duration="1674000" />
       <workItem from="1715081609580" duration="5055000" />
-      <workItem from="1715263727543" duration="1485000" />
+      <workItem from="1715263727543" duration="1870000" />
+      <workItem from="1715788704026" duration="2144000" />
+      <workItem from="1715951746133" duration="108000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -107,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715089957106</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implemented json deserialization">
+      <option name="closed" value="true" />
+      <created>1715265244670</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715265244670</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +134,7 @@
     <MESSAGE value="added date time and colored text" />
     <MESSAGE value="added list of computers and the option for the server to get the details by index" />
     <MESSAGE value="added connection duration trackers" />
-    <option name="LAST_COMMIT_MESSAGE" value="added connection duration trackers" />
+    <MESSAGE value="implemented json deserialization" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented json deserialization" />
   </component>
 </project>
