@@ -37,7 +37,7 @@ public class CommunicationThread extends Thread{
             in.readFully(jsonData);
             String jsonString = new String(jsonData);
             clientDevice = mapper.readValue(jsonString, Record.class);
-            this.setName(clientDevice.getIdAsString());
+            this.setName(new String(clientDevice.getId()+""));
             ComputerServer.deviceList.add(clientDevice);
         } catch (IOException i){
             i.printStackTrace();
