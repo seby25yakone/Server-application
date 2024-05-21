@@ -20,6 +20,20 @@ public class ComputerServer {
             System.out.println("Server started.");
             System.out.println("Waiting for a client...");
         } catch (IOException e) {e.printStackTrace();}
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while(true){
+                    int i = read.nextInt();
+                    if(deviceList.size()>=i+1){
+                        System.out.println("\u001B[32mClient info: ");
+                        System.out.println(deviceList.get(i) + "\u001B[0m");
+                    }
+                    else System.out.println("Client index not found");
+
+                }
+            }
+        }).start();
         while(true){
             try{
                 synchronized (serverSocket){
@@ -28,20 +42,6 @@ public class ComputerServer {
                 }
             } catch (IOException e) {e.printStackTrace();}
             new CommunicationThread(clientSocket).start();
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    while(true){
-                        int i = read.nextInt();
-                        if(deviceList.size()>=i+1){
-                            System.out.println("\u001B[32mClient info: ");
-                            System.out.println(deviceList.get(i) + "\u001B[0m");
-                        }
-                        else System.out.println("Client index not found");
-
-                    }
-                }
-            }).start();
         }
     }
 }

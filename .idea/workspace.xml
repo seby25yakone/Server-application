@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="900088af-ecfe-4962-8704-01770ecfda47" name="Changes" comment="fixed deserialization issues">
+    <list default="true" id="900088af-ecfe-4962-8704-01770ecfda47" name="Changes" comment="added server-side device field that contains the deserialized information string inside record class for cleaner viewing of information">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/CommunicationThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/CommunicationThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Record.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/ComputerServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/ComputerServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +80,7 @@
       <workItem from="1715951746133" duration="3518000" />
       <workItem from="1716222046915" duration="864000" />
       <workItem from="1716222946324" duration="188000" />
-      <workItem from="1716300719288" duration="1834000" />
+      <workItem from="1716300719288" duration="2889000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -163,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716222963562</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added server-side device field that contains the deserialized information string inside record class for cleaner viewing of information">
+      <option name="closed" value="true" />
+      <created>1716302778063</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716302778063</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +187,7 @@
     <MESSAGE value="attempted to fix deserialization" />
     <MESSAGE value="removed unnecessary getter" />
     <MESSAGE value="fixed deserialization issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed deserialization issues" />
+    <MESSAGE value="added server-side device field that contains the deserialized information string inside record class for cleaner viewing of information" />
+    <option name="LAST_COMMIT_MESSAGE" value="added server-side device field that contains the deserialized information string inside record class for cleaner viewing of information" />
   </component>
 </project>
