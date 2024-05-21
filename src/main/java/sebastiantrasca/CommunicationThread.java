@@ -1,5 +1,6 @@
 package sebastiantrasca;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.DataInputStream;
@@ -25,6 +26,7 @@ public class CommunicationThread extends Thread{
         Instant start = Instant.now();
         DataInputStream in = null;
         ObjectMapper mapper = new ObjectMapper();
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
         try {
             in = new DataInputStream(socket.getInputStream());
@@ -37,6 +39,17 @@ public class CommunicationThread extends Thread{
             in.readFully(jsonData);
             String jsonString = new String(jsonData);
             clientDevice = mapper.readValue(jsonString, Record.class);
+            if(clientDevice.getDeviceType()==Type.PRINTER){
+                Printer device = mapper.readValue(clientDevice.getDeviceInfo(), Printer.class);
+                clientDevice.setDevice(device);
+            }
+            else if (clientDevice.getDeviceType()==Type.ROUTER){
+                Router device = mapper.readValue(clientDevice.getDeviceInfo(), Router.class);
+                clientDevice.setDevice(device);
+            } else {
+                Computer device = mapper.readValue(clientDevice.getDeviceInfo(), Computer.class);
+                clientDevice.setDevice(device);
+            }
             this.setName(new String(clientDevice.getId()+""));
             ComputerServer.deviceList.add(clientDevice);
         } catch (IOException i){
