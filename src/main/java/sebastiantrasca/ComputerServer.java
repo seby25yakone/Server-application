@@ -30,7 +30,6 @@ public class ComputerServer {
                         System.out.println(deviceList.get(i) + "\u001B[0m");
                     }
                     else System.out.println("Client index not found");
-
                 }
             }
         }).start();

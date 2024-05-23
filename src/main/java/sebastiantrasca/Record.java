@@ -38,6 +38,6 @@ public class Record<T> {
 
     @Override
     public String toString() {
-        return "ID: " + id + "\nDevice type: " + deviceType + "\nDevice specs: " + device.toString();
+        return "ID: " + id + "\nDevice type: " + deviceType + "\nDevice specs: \n" + device.toString();
     }
 }
