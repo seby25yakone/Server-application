@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="900088af-ecfe-4962-8704-01770ecfda47" name="Changes" comment="changed computer class toString">
+    <list default="true" id="900088af-ecfe-4962-8704-01770ecfda47" name="Changes" comment="changed printer class toString">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Computer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Router.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +84,7 @@
       <workItem from="1716222946324" duration="188000" />
       <workItem from="1716300719288" duration="3676000" />
       <workItem from="1716322444135" duration="1740000" />
-      <workItem from="1716471978799" duration="502000" />
+      <workItem from="1716471978799" duration="881000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -187,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716472357418</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="changed printer class toString">
+      <option name="closed" value="true" />
+      <created>1716472532775</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1716472532775</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +218,7 @@
     <MESSAGE value="added server-side device field that contains the deserialized information string inside record class for cleaner viewing of information" />
     <MESSAGE value="fixed issues with reading device list" />
     <MESSAGE value="changed computer class toString" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed computer class toString" />
+    <MESSAGE value="changed printer class toString" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed printer class toString" />
   </component>
 </project>
