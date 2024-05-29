@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="900088af-ecfe-4962-8704-01770ecfda47" name="Changes" comment="changed router class toString">
+    <list default="true" id="900088af-ecfe-4962-8704-01770ecfda47" name="Changes" comment="changed record class, added device class, changed code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sebastiantrasca/Record.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +70,9 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="sebastiantrasca" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sebastiantrasca" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -96,6 +100,7 @@
       <workItem from="1716322444135" duration="1740000" />
       <workItem from="1716471978799" duration="2334000" />
       <workItem from="1716572900495" duration="1528000" />
+      <workItem from="1716975723218" duration="1004000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -217,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716472895469</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="changed record class, added device class, changed code">
+      <option name="closed" value="true" />
+      <created>1716975966564</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716975966564</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +252,7 @@
     <MESSAGE value="changed computer class toString" />
     <MESSAGE value="changed printer class toString" />
     <MESSAGE value="changed router class toString" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed router class toString" />
+    <MESSAGE value="changed record class, added device class, changed code" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed record class, added device class, changed code" />
   </component>
 </project>

@@ -51,7 +51,7 @@ public class Device {
     @Override
     public String toString() {
         return "classId: " + classId +
-                "\n Type: " + type +
-                "\n Properties: \n" + fields;
+                "\nType: " + type +
+                "\nProperties: \n" + fields;
     }
 }
