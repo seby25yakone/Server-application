@@ -2,6 +2,8 @@ package sebastiantrasca;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sebastiantrasca.DeviceRecord;
+import com.sebastiantrasca.Device;
 
 import java.io.DataInputStream;
 import java.io.IOException;
@@ -12,13 +14,13 @@ import java.time.LocalTime;
 
 public class CommunicationThread extends Thread{
     protected Socket socket;
-    private Record clientDevice;
+    private DeviceRecord clientDevice;
 
     public CommunicationThread(Socket clientSocket){
         this.socket = clientSocket;
     }
 
-    public Record getClientDevice(){
+    public DeviceRecord getClientDevice(){
         return clientDevice;
     }
 
@@ -38,7 +40,7 @@ public class CommunicationThread extends Thread{
             byte[] jsonData = new byte[length];
             in.readFully(jsonData);
             String jsonString = new String(jsonData);
-            clientDevice = mapper.readValue(jsonString, Record.class);
+            clientDevice = mapper.readValue(jsonString, DeviceRecord.class);
             this.setName(new String(clientDevice.getId()+""));
             ComputerServer.deviceList.add(clientDevice);
         } catch (IOException i){
